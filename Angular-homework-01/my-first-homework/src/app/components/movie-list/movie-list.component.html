@@ -1,0 +1,8 @@
+<div class="movie_list_container">
+  <h1>Title from parent app component: {{ movieListTitle }}</h1>
+  <span>My favourite move is: {{ favouriteMovie }}</span>
+  <app-movie
+    [movieTitleFromMovieListFromApp]="movieTitle"
+    (movieDetailsToSendToParent)="onMovieDetailsReceived($event)"
+  ></app-movie>
+</div>
