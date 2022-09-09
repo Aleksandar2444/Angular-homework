@@ -1,0 +1,11 @@
+<div class="recipe_details_container">
+  <h1 *ngIf="selectedRecipe">Recipes Details:</h1>
+
+  <div class="recipe_details_wrapper" *ngIf="selectedRecipe">
+    <ul>
+      <li>Name: {{ selectedRecipe.name }}</li>
+      <li>Description: {{ selectedRecipe.description }}</li>
+      <li>Ingredients: {{ selectedRecipe.ingredients }}</li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="recipe_container">
+  <h1 *ngIf="recipes.length > 0">All recipes:</h1>
+
+  <div class="recipe_wrapper" *ngFor="let recipe of recipes">
+    <ul>
+      <li (click)="onRecipeDetails(recipe)">Recipe Name: {{ recipe.name }}</li>
+    </ul>
+  </div>
+</div>

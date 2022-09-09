@@ -1,0 +1,16 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: lightsalmon;
+  height: 80px;
+  align-items: center;
+  gap: 10px;
+
+  &__item {
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 24px;
+    color: black;
+  }
+}

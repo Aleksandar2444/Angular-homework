@@ -1,0 +1,50 @@
+<form (ngSubmit)="onFormSubmit()" [formGroup]="recipeForm">
+  <div class="form-subgroup basic-data">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" class="form-input" formControlName="name" />
+      <p
+        class="help"
+        *ngIf="recipeForm.get('name')?.touched && recipeForm.get('name')?.errors?.['required']"
+      >
+        This field is required!
+      </p>
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input
+        type="text"
+        id="description"
+        class="form-input"
+        formControlName="description"
+      />
+      <p
+        class="help"
+        *ngIf="recipeForm.get('description')?.touched && recipeForm.get('description')?.errors?.['required']"
+      >
+        This field is required!
+      </p>
+    </div>
+    <div class="form-group">
+      <label for="ingredients">Ingredients</label>
+      <input
+        type="text"
+        id="ingredients"
+        class="form-input"
+        formControlName="ingredients"
+      />
+      <p
+        class="help"
+        *ngIf="recipeForm.get('ingredients')?.touched && recipeForm.get('ingredients')?.errors?.['required']"
+      >
+        This field is required!
+      </p>
+    </div>
+    <p class="note">
+      Note that the ingredients should be added with empty space!
+    </p>
+  </div>
+  <button class="btn" type="submit" [disabled]="recipeForm.invalid">
+    Create Recipe
+  </button>
+</form>

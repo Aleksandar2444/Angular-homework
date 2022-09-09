@@ -1,0 +1,50 @@
+.form-subgroup {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  gap: 10px;
+  margin-top: 10px;
+  background-color: lightseagreen;
+}
+
+.form-group {
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+
+  & input {
+    height: 22px;
+    border-radius: 3px;
+  }
+
+  & label {
+    margin-bottom: 5px;
+  }
+}
+
+.help {
+  text-align: center;
+}
+
+.note {
+  text-align: center;
+  margin: 10px 10px;
+  font-size: 18px;
+}
+
+.btn {
+  margin-top: 10px;
+  width: 125px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: lightgreen;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: translateY(4px);
+}

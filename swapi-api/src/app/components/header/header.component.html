@@ -1,0 +1,34 @@
+<header>
+  <div>
+    <nav>
+      <div
+        routerLink="/people"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        People
+      </div>
+      <div
+        routerLink="/people/details/1"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        People Details
+      </div>
+      <div
+        routerLink="/planets"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Planets
+      </div>
+      <div
+        routerLink="/planets/details/1"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Planets Details
+      </div>
+    </nav>
+  </div>
+</header>
